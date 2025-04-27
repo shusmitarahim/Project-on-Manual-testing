@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "4e00ef99-b843-4767-b09f-6cb956195ca0",
+		"name": "Evershop API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42721465"
+	},
+	"item": [
+		{
+			"name": "Search With Given Shoe Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/search?keyword=Nike+react+phantom+run+flyknit+2",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "Nike+react+phantom+run+flyknit+2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Shoe Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/men/nike-react-phantom-run-flyknit-2-178",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"men",
+						"nike-react-phantom-run-flyknit-2-178"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Select Shoe Size",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/men/nike-react-phantom-run-flyknit-2-178?ajax=true&size=25",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"men",
+						"nike-react-phantom-run-flyknit-2-178"
+					],
+					"query": [
+						{
+							"key": "ajax",
+							"value": "true"
+						},
+						{
+							"key": "size",
+							"value": "25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shoe details based on size and color",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/men/nike-react-phantom-run-flyknit-2-178?size=25&color=14&ajax=true",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"men",
+						"nike-react-phantom-run-flyknit-2-178"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "25"
+						},
+						{
+							"key": "color",
+							"value": "14"
+						},
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add to cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sku\":\"NJC48508-Green-X\",\"qty\":\"2\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/api/cart/mine/items",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart",
+						"mine",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view cart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/cart",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"cart"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
